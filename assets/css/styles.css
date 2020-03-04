@@ -1,0 +1,41 @@
+div {
+  text-align: center;
+}
+
+.h1, h1 {
+  text-align: center;
+}
+
+li {
+  text-align: left;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  text-align: center;
+}
+
+#More {
+  text-align: center;
+}
+
+#About {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin: 150px;
+}
+
+.row {
+  text-align: center;
+}
+
+dl, ol, ul {
+  margin: 10px 200px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin: 0px 30px;
+}
+

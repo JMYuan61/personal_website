@@ -1,45 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>Jiaming Yuan</title>
-<link rel="stylesheet" href="bootstrap.min.css">
-<body>
+<html>
 
-        <!-- Heading and band photo -->
-        <section id="Name">
-            <h1>Jiaming Yuan</h1> 
-            <img src="photo.jpg" class="img-circle" alt="my picture" height="300px" width="300px">
-            <p>
-                Computer Science(BS) and Mathematics(BS) dual degree at University of Massachusetts Amherst
-            </p>
-        </section>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andada">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-        <section id="About">
-            <h2>About</h2>
-            <p>
-                I'm an enthusiastic undergraduate student at the University of Massachusetts Amherst who is currently completing a dual degree in Computer Science(BS) and Mathematics(BS), and earned a 3.833 GPA. I am passionate about full-stack Software Development, iOS Application Development, and Machine Learning.
-            </p>
-        </section>
-   
-      <!-- List of band members -->
-        <section id="Projects">
-            <h2>Project List</h2>           
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
+    <nav class="navbar navbar-light navbar-expand-md" style="filter: blur(0px) brightness(109%) contrast(105%) hue-rotate(0deg) invert(0%) sepia(0%);">
+        <div class="container-fluid"><a class="navbar-brand" href="#" style="font-family: Andada, serif;">Jiaming Yuan's Website</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#Name" style="color: #000000;font-size: 15px;opacity: 0.50;font-family: Andada, serif;">Name</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#About" style="color: #000000;font-size: 15px;opacity: 0.50;font-family: Andada, serif;">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#Projects" style="color: #000000;font-size: 15px;opacity: 0.50;font-family: Andada, serif;">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#More" style="color: #000000;font-size: 15px;opacity: 0.50;font-family: Andada, serif;">More</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="Name" style="margin: 150px;">
+        <div>
+            <h1 style="font-family: Andada, serif;">Jiaming Yuan</h1><img class="rounded-circle img-fluid img-thumbnail" src="assets/img/photo.jpg" style="width: 200px;height: 200px;padding: 3px;margin: 41px;">
+            <p style="font-family: Andada, serif;">Computer Science(BS) and Mathematics(BS) dual degree at University of Massachusetts Amherst</p>
+        </div>
+    </section>
+    <section id="About" style="margin: 150px;">
+        <h1 style="font-family: Andada, serif;margin: 30px ;">About</h1>
+        <div>
+            <p>I'm an enthusiastic undergraduate student at the University of Massachusetts Amherst who is currently completing a dual degree in Computer Science(BS) and Mathematics(BS), and earned a 3.833 GPA. I am passionate about full-stack Software Development,
+                iOS Application Development, and Machine Learning.<br></p>
+        </div>
+    </section>
+    <section id="Projects" style="margin: 150px;">
+        <h1 style="font-family: Andada, serif;">Projects</h1>
+        <div id="ArtFetch">
+            <h1 style="margin: 30px;font-family: Andada, serif;opacity: 0.70;font-size: 30px;">ArtFetch</h1>
             <ul>
-                <li>Built the front-end interfaces based on <strong>React.js</strong> and <strong>SASS.</strong></li>
-                <li>Wrote multiple AJAX requests sending to the server wrote in <strong>Node.js</strong> to manage user and image data.</li>
-                <li>Stored the user data in <strong>MongoDB</strong> using Mongoose.</li>
-                <li>Implemented images upload feature by storing images to Firebase and saving URLs to the database.</li>
+                <li>Built the front-end interfaces based on React.js and SASS.<br></li>
+                <li>Wrote multiple AJAX requests sending to the server wrote in Node.js to manage user and image data.<br></li>
+                <li>Stored the user data in MongoDB using Mongoose.<br></li>
+                <li>Implemented images upload feature by storing images to Firebase and saving URLs to the database.<br></li>
             </ul>
+        </div>
+        <div id="YourWebsiteStudio">
+            <h1 style="font-family: Andada, serif;opacity: 0.70;font-size: 30px;">YourWebsiteStudio<br></h1>
             <ul>
-                <li>Built the front-end login page and main page using <strong>Boostrap Studio</strong> and <strong>Angular.js</strong>.</li>
-                <li>Implemented drag and drop tools which allows users to adjust size and position of elements in their personal websites.</li>
-            </ul>                                
-            <ul>
-                <li>Developed machine learning model that can predict the sales price for each house in <strong>Python</strong> and used linear regression in <strong>scikit-learn</strong> with different regularization methods including ridge, LASSO, and ElasticNet.</li>
-                <li>Implemented <strong>Grid Search</strong> which chooses the best hyper parameter for the model. Decreased mean squared logarithmic error to 0.13652 for testing data on Kaggle.</li>
+                <li>Built the front-end login page and main page using Boostrap Studio and Angular.js.<br></li>
+                <li>Implemented drag and drop tools which allows users to adjust size and position of elements in their personal websites.<br></li>
             </ul>
-        </section>
+        </div>
+        <div id="House-Prices-Evaluator">
+            <h1 style="font-family: Andada, serif;filter: grayscale(100%);opacity: 0.70;font-size: 30px;">House Prices Evaluator<br></h1>
+            <ul>
+                <li>Developed machine learning model that can predict the sales price for each house in Python and used linear regression in scikit-learn with different regularization methods including ridge, LASSO, and ElasticNet.<br></li>
+                <li>Implemented Grid Search which chooses the best hyper parameter for the model. Decreased mean squared logarithmic error to 0.13652 for testing data on Kaggle.<br></li>
+            </ul>
+        </div>
+    </section>
+    <section id="More" style="margin: 150px;">
+        <h1 style="font-family: Andada, serif;">Contact!</h1>
+        <div class="row">
+            <div id="Facebook" class="col-lg-4 col-md-6 mb-3"><a href="https://www.facebook.com/edward.yuan.188" style="width: 80px;height: 80px;"><img class="rounded-circle" style="margin: 20px;width: 80px;height: 80px;" src="assets/img/facebook.png"></a></div>
+            <div id="Twitter" class="col-lg-4 col-md-6 mb-3"><a href="https://twitter.com/JiamingYuan2"><img class="rounded-circle" style="margin: 20px;width: 80px;height: 80px;" src="assets/img/twitter.png"></a></div>
+            <div id="LinkedIn" class="col-lg-4 col-md-6 mb-3"><a href="https://www.instagram.com/yuan.edward/"><img class="rounded-circle" src="assets/img/instagram.png" style="width: 80px;height: 80px;margin: 20px;"></a></div>
+        </div>
+    </section>
+    <footer style="margin: 1px 150px;">
+        <p style="background-color: rgba(0,0,0,0);height: 20px;font-size: 14px;">Copyright © 2020 Jiaming Yuan</p>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
 
-
-   </body>
 </html>
